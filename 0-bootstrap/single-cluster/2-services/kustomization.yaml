@@ -7,7 +7,7 @@ resources:
 #- argocd/instance/ibm-vault-deploy.yaml
 
 ## Cloud Pak for Integration
-#- argocd/operators/ibm-ace-operator.yaml
+- argocd/operators/ibm-ace-operator.yaml
 #- argocd/operators/ibm-apic-operator.yaml
 #- argocd/instances/ibm-apic-instance.yaml
 #- argocd/instances/ibm-apic-management-portal-instance.yaml
@@ -129,7 +129,7 @@ resources:
 #- argocd/instances/swaggereditor.yaml
 #- argocd/instances/sonarqube.yaml
 #- argocd/instances/pact-broker.yaml
-# In OCP 4.7+ we need to install openshift-pipelines and possibly privileged scc to the pipeline serviceaccount
+# In OCP 4.15+ we need to install openshift-pipelines and possibly privileged scc to the pipeline serviceaccount
 - argocd/operators/openshift-pipelines.yaml
 
 # Serverless
