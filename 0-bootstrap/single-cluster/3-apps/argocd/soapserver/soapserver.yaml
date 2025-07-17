@@ -15,8 +15,6 @@ spec:
   project: applications
   source:
     path: soapserver/config/argocd/soapserver
-    repoURL: https://github.com/your-org/multi-tenancy-gitops.git
-    targetRevision: main  # or the branch you're using, e.g. "dev" or "gitops"
   syncPolicy:
     automated:
       prune: true
