@@ -17,7 +17,6 @@ spec:
     path: soapserver/config/argocd/soapserver
     source:
     repoURL: https://github.com/your-org/multi-tenancy-gitops.git
-    path: 0-bootstrap/single-cluster/3-apps/argocd/soapserver
     targetRevision: main  # or the branch you're using, e.g. "dev" or "gitops"
   syncPolicy:
     automated:
