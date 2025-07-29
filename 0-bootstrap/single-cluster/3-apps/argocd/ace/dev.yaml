@@ -10,10 +10,11 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: openshift-gitops          # stays the same
     server: https://kubernetes.default.svc
-  project: applications
+  project: applications                  # stays the same
   source:
+    repoURL: https://github.com/ibminterns/multi-tenancy-gitops-apps.git   
     path: ace/config/argocd/dev
   syncPolicy:
     automated:
