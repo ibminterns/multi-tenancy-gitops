@@ -14,6 +14,7 @@ spec:
     server: https://kubernetes.default.svc
   project: applications
   source: # repoURL  and targetRevision populated by kustomize patches in 3-apps/kustomization.yaml
+    repoURL: https://github.com/your-org/multi-tenancy-gitops.git
     path: ace/config/argocd/ci
   syncPolicy:
     automated:
